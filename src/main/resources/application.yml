@@ -3,10 +3,10 @@ micronaut:
     name: demo
 datasources:
   default:
-    url: jdbc:mariadb://localhost:3306/test
+    url: jdbc:mariadb://localhost:3306/db
     driverClassName: org.mariadb.jdbc.Driver
-    username: test
-    password: test
+    username: root
+    password: ''
     schema-generate: CREATE_DROP
     dialect: MYSQL
 jpa.default.properties.hibernate.hbm2ddl.auto: update
