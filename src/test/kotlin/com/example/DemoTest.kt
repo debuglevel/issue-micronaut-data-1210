@@ -36,4 +36,13 @@ class DemoTest {
         Assertions.assertTrue(foundAnimal.isPresent)
         Assertions.assertTrue(foundAnimal.get().id == animal.id)
     }
+
+    @Test
+    fun createAndExistsById() {
+        val animal = repository.save(Animal(null))
+        Assertions.assertTrue(animal.id != null)
+
+        val exists = repository.existsById(animal.id)
+        Assertions.assertTrue(exists)
+    }
 }
