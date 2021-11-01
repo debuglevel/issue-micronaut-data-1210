@@ -1,4 +1,18 @@
+# MariaDB does not work :-(
 datasources:
   default:
     url: jdbc:tc:mariadb:10:///db
     driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+
+# MySQL does not work :-(
+#datasources:
+#  default:
+#    url: jdbc:tc:mysql:8:///db
+#    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+
+# PostgreSQL works :-)
+#datasources:
+#  default:
+#    url: jdbc:tc:postgresql:12:///postgres
+#    driverClassName: org.testcontainers.jdbc.ContainerDatabaseDriver
+
